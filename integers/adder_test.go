@@ -3,7 +3,7 @@ package integers
 import "testing"
 
 func TestAdder(t *testing.T) {
-	got := Add(2,2)
+	got := Add(2, 2)
 	want := 4
 	assert(t, got, want)
 }

@@ -14,6 +14,10 @@ type Post struct {
 	Tags                     []string
 }
 
+func (p Post) SanitisedTitle() string {
+	return strings.ToLower(strings.Replace(p.Title, " ", "-", -1))
+}
+
 //var posts []Post
 //posts = NewPostsFromFS("posts")
 
